@@ -1,20 +1,16 @@
 [versions]
-#noinspection GradleDependency compatibility
-agp = "8.2.2"
-kermit = "2.0.3"
-#noinspection GradleDependency compatibility
-kotlin = "1.9.22"
-kotlinx-coroutines = "1.8.1"
+agp = "8.0.2"
+kotlin = "1.9.23"
+kotlin-coroutines = "1.8.1"
 nexus-publish = "2.0.0-rc-1"
 android-minSdk = "24"
 android-compileSdk = "33"
 
 [libraries]
-kermit = { group = "co.touchlab", name = "kermit", version.ref = "kermit" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 nexus-publish = { module = "io.github.gradle-nexus.publish-plugin:io.github.gradle-nexus.publish-plugin.gradle.plugin", version.ref = "nexus-publish" }
 blue-falcon = { module = "dev.bluefalcon:blue-falcon", version = "1.0.0" }
-kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlin-coroutines" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }

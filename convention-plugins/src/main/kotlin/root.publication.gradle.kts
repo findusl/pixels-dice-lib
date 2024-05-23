@@ -1,10 +1,6 @@
 plugins {
+    // This needs to be applied to root project for some reason
     id("io.github.gradle-nexus.publish-plugin")
-}
-
-allprojects {
-    group = "org.jetbrains.kotlinx.multiplatform-library-template"
-    version = "0.0.1"
 }
 
 nexusPublishing {
